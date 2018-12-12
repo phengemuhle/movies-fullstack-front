@@ -2,6 +2,10 @@
   background-color: #0047ab;
   background-size: cover;
 }
+a{
+  color: black;
+  text-decoration: none;
+}
 .headerCont{
   display: flex;
   justify-content: space-around;
@@ -56,36 +60,98 @@
   width: 100%;
 }
 .moviesCont{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  display: inline-block;
   text-align: start;
   height: 30em;
-  width: 20em;
-  padding: 1em;
+  width: 16%;
+  padding: .2em;
   background-color: aliceblue;
   border: black .2em solid;
   margin: .4em;
   border-radius: 5%;
   overflow: auto;
-  padding: .2em;
+  
+}
+.moviesCont:hover{
+  -webkit-transform: scale(1.2);
+  transform: scale(1.1);
 }
 .imgThumb{
-  height: 15em;
+  width: 100%;
 }
-.postAndmovieCont{
+
+.postAndMovieCont{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  /* width: 15em */
+  /* justify-content: ; */
+  width: auto;
 
 }
+.movieList{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+  /* padding: 1em; */
+}
 .postCont{
-  width: 30em;
+  width: 20%;
 }
 .imgcont{
   display:flex;
   justify-content: center;
-  margin-bottom: 1em;
+  height: 80%;
   
+}
+.moviesEach{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: .1em;
+  height: 17%;
+  text-align: center;
+}
+.postLanding{
+  width: 100%;
+}
+
+.selectedMoviesInfo{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+
+}
+.selectedMoviesCont{
+  display: inline-block;
+  text-align: start;
+  height: 30em;
+  width: 20%;
+  padding: .2em;
+  background-color: aliceblue;
+  border: black .2em solid;
+  margin: .4em;
+  border-radius: 5%;
+  overflow: auto;
+  margin-right: 2em;
+}
+.selectedMoviesMain{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+.selectedMovieTitle{
+  font-size: 3em;
+  margin-bottom: 10em;
+}
+.selectedImgCont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5em;
+}
+/* .infoSettings{
+  font-size: 1.1em;
+} */
+.infoSettings .infoHeader{
+  text-decoration: bold;
+  font-size: 1.5em;
 }
