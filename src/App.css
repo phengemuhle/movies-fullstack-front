@@ -20,7 +20,7 @@ a{
 }
 .topnav {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   height: 3em;
   overflow: hidden;
   background-color: #e9e9e9;
@@ -63,7 +63,7 @@ a{
   display: inline-block;
   text-align: start;
   height: 30em;
-  width: 16%;
+  width: 17%;
   padding: .2em;
   background-color: aliceblue;
   border: black .2em solid;
@@ -78,6 +78,7 @@ a{
 }
 .imgThumb{
   width: 100%;
+  min-width: 100%;
 }
 
 .postAndMovieCont{
@@ -95,9 +96,14 @@ a{
   /* padding: 1em; */
 }
 .postCont{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
   width: 20%;
+  height: 100%;
+  padding: .2em;
 }
-.imgcont{
+.imgCont{
   display:flex;
   justify-content: center;
   height: 80%;
@@ -123,8 +129,8 @@ a{
 .selectedMoviesCont{
   display: inline-block;
   text-align: start;
-  height: 30em;
-  width: 20%;
+  height: 23em;
+  width: 100%;
   padding: .2em;
   background-color: aliceblue;
   border: black .2em solid;
@@ -132,6 +138,45 @@ a{
   border-radius: 5%;
   overflow: auto;
   margin-right: 2em;
+}
+.moviePosterAndButton{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 20%;
+  margin-right: 2em;
+  margin-top: 2em;
+}
+.movieInfoCont{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+.reviewButton{
+  display: flex;
+  flex-direction: row;
+  margin-left: 1.5em;
+
+}
+.editButton{
+  width: 5em;
+  font-size: 1em;
+  background-color: aquamarine;
+  margin-right: 1em;
+}
+.deleteButton{
+  width: 5em;
+  font-size: 1em;
+  background-color: aquamarine;
+}
+.deleteButton:hover, 
+.movieDeleteButton:hover, 
+.submitReviewButton:hover,
+.editButton:hover,
+.logInButton:hover,
+.editMovieButton:hover{
+  -webkit-transform: scale(1.2);
+  transform: scale(1.1);
 }
 .selectedMoviesMain{
   display: flex;
@@ -148,10 +193,154 @@ a{
   align-items: center;
   padding: .5em;
 }
-/* .infoSettings{
-  font-size: 1.1em;
-} */
 .infoSettings .infoHeader{
   text-decoration: bold;
   font-size: 1.5em;
+}
+.formWidth{
+  width: 90%;
+}
+.logInPageCont{
+  background-image: url("https://cdn.onlinewebfonts.com/svg/img_74504.png");
+  height: 35em;
+  background-size: 10em;
+  background-position: bottom;
+  overflow: hidden;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logInButton{
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  font-size: 2em;
+  background-color: purple;
+  color: white;
+  border: white 2px solid;
+}
+.postNameCont{
+  font-size: 2em;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-direction: column;
+  color: black;
+  margin-bottom: .3em;
+  height: 2.2em;
+  padding: 3px;
+  border: black 2px solid;
+  background-color: aliceblue;
+}
+.postNameInput{
+  width: 100;
+  height: 2em;;
+  border: black 2px solid;
+}
+.postRatingCont{
+  display: flex;
+  flex-direction: row;
+  font-size: 2em;
+  justify-content: space-around;
+  align-items: center;
+  height: 1em;
+  margin-bottom: .3em;
+  padding: 3px;
+  border: black 2px solid;
+  background-color: aliceblue; 
+}
+.postReviewCont{
+  display: flex;
+  flex-direction: column;
+  font-size: 2em;
+  justify-content: space-around;
+  align-items: center;
+  height: 5.5em;
+  margin-bottom: .3em;
+  padding: 3px;
+  border: black 2px solid;
+  background-color: aliceblue;
+}
+.reviewBox{
+  height: 9em;
+  border: black 2px solid;
+}
+.movieDeleteButton{
+  display: flex;
+  align-self: center;
+  width: 60%;
+  font-size: 1em;
+  background-color: red;
+  margin-top: 2em;
+}
+.submitReviewButton{
+  display: flex;
+  align-self: center;
+  font-size: 1.3em;
+  width:70%;
+  background-color: purple;
+}
+.editMovieButton {
+  display: flex;
+  align-self: center;
+  font-size: 1.3em;
+  width:70%;
+  margin-top: 1em;
+  background-color: lightskyblue;
+}
+.addMovieButton {
+  font-size: 1em;
+  color: #e9e9e9;
+  text-align: center;
+  width:100%;
+  height: 2em;
+  background-color:blue;
+}
+.addNewMovieCont{
+  display: flex;
+  align-items: space-around;  
+  flex-direction: column;
+  width: 80%;
+  height: 80%;
+  background-color: #ddd;
+  padding: .5em;
+}
+.AddMoviePageCont{
+  background-image: url("https://cdn.onlinewebfonts.com/svg/img_74504.png");
+  height: 35em;
+  width: 100vw;
+  background-size: 10em;
+  background-position: bottom;
+  overflow: hidden;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.addMovieTitle {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.basicFormat{
+  display: flex;
+  flex-direction: column;
+}
+.backButton {
+  font-size: 1em;
+  color: #e9e9e9;
+  text-align: center;
+  width:7em;
+  height: 2em;
+  background-color:purple;
+}
+.deleteCont{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
 }
