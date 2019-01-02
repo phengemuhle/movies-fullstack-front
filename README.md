@@ -1,44 +1,25 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Galvanize OMDb
 
-## Available Scripts
+This project was built to show mastery of both front and [back end](https://github.com/phengemuhle/movies-fullstack-back) building. A user can view, edit, add, or remove a movie. As well as adding or deleting a review of the listed movies. 
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+Clone this repository and run `npm install`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3001](http://localhost:3000) to view it in the browser.
+## Deployment
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Add additional notes about how to deploy this on a live system
 
-### `npm test`
+## Built With
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* [React](https://reactjs.org/docs/getting-started.html) - The web framework used
+* [Router](https://github.com/ReactTraining/react-router/tree/master/packages/react-router/docs) - Library
 
-### `npm run build`
+## Authors
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* **Phillip Hengemuhle** - *Initial work* - [Galvanize Movie Front-End](https://github.com/phengemuhle/movies-fullstack-front)
+* **Phillip Hengemuhle** - *Initial work* - [Galvanize Movie Back-End](https://github.com/phengemuhle/movies-fullstack-back)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Deployed Links
+[Galvanize Movies](https://hengemuhle-movies.herokuapp.com/)
+[Galvanize Movie DB](https://hengemuhle-movies-db.herokuapp.com/)
