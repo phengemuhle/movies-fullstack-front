@@ -165,7 +165,7 @@ class App extends Component {
             <Route path="/added" render={() => <Added/>}/>
             <Route path="/movies" render={() => <Movies searched={this.state.searched}/>}/>
             <Route path="/post" render={() => <Post rateMovie={this.rateMovie} handelInput={this.handelInput} />}/>
-            <Route path="/newMovie/id/:id" render={(props) => <NewMovie selectMovie={this.selectMovie} deleteMovie={this.deleteMovie} {...props} {...this.state} searched={this.state.searched} rateMovie={this.rateMovie} deleteReview={this.deleteReview} handelInput={this.handelInput} />}/>
+            <Route path="/movie/id/:id" render={(props) => <NewMovie selectMovie={this.selectMovie} deleteMovie={this.deleteMovie} {...props} {...this.state} searched={this.state.searched} rateMovie={this.rateMovie} deleteReview={this.deleteReview} handelInput={this.handelInput} />}/>
             <Route path="/addMovie" render={() => <AddMovie addMovie={this.addMovie} handelInput={this.handelInput} />}/>
             <Route path="/editMovie/:id" render={() => <EditMovie editMovie={this.editMovie} handelInput={this.handelInput} />}/>
           </div>
