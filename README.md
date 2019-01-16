@@ -2,6 +2,9 @@
 
 This project was built to show mastery of both front and [back end](https://github.com/phengemuhle/movies-fullstack-back) building. A user can view, edit, add, or remove a movie. As well as adding or deleting a review of the listed movies. 
 
+![Home Screen of Galvanize OMDb](src/moviesImg.png)
+
+
 ## Getting Started
 
 Clone this repository and run `npm install`
