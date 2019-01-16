@@ -9,10 +9,6 @@ This project was built to show mastery of both front and [back end](https://gith
 
 Clone this repository and run `npm install`
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
 ## Built With
 
 * [React](https://reactjs.org/docs/getting-started.html) - The web framework used
